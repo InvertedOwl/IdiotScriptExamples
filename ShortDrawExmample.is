@@ -1,0 +1,19 @@
+□(183, 217)
+Start | []
+Create   Var | [return,j_done]
+Create   Var | [inc,1]
+Create   Var | [count,0]
+Create   Var | [max,5]
+Jump | [for10]
+Trigger | [j_done]
+Print Var | [count]
+□(257, 471)
+Trigger | [for10]
+Trigger | [j]
+Add Vars | [count,inc]
+Print Var | [count]
+Jump If =  | [return,count,max]
+Jump | [j]
+□(668, 628)
+Trigger | [return]
+Jump ToVar | [return]
